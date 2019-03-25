@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>10- Maximo Comun Divisor</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+</head>
+<body>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="salario.html">Salario</a></li>
+        <li><a href="pi.html">Calcular Pi</a></li>
+        <li><a href="cuadrado_magico.html">Cuadrado magico</a></li>
+        <li><a href="sumatoria.html">Sumatoria e^x</a></li>
+        <li><a href="fibonacci.html">Fibonacci</a></li>
+        <li><a href="MCD.html">Maximo Comun Divisor</a></li>
+        <li><a href="sumatoria2.html">Sumatoria</a></li>
+        <li><a href="sumatoria3.html">Sumatoria serie</a></li>
+    </ul>
+
+    <ul id="dropdown2" class="dropdown-content">
+            <li><a href="domingo.html">Domingo de Pascua</a></li>
+            <li><a href="asterisco.html">Renglones con asterisco</a></li>
+    </ul>
+
+    <ul id="dropdown3" class="dropdown-content">
+            <li><a href="numeros.html">Menor, mayor y media</a></li>
+            <li><a href="numero_perfecto.html">Primeros tres numeros pefectos</a></li>
+            <li><a href="primo.html">Numero primo</a></li>
+            <li><a href="numero_perfecto2.html">Numero pefecto</a></li>
+            <li><a href="numero_menor.html">Numero menor</a></li>
+            
+            
+    </ul>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Formulas<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Fecha<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">Numeros<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+            
+    <div class="container">
+        <div class="row">
+            <div class="col s4"></div>
+                <p>Calcula el Maximo Comun Divisor de dos numeros:</p><br>
+            <div class="col s5"></div>
+                <p>Numero A:</p><br>
+                <input type="text" id="valorA"><br>
+                <p>Numero B:</p><br>
+                <input type="text" id="valorB"><br>
+                <a class="waves-effect waves-light btn" id="boton">Calcular</a><br><br>
+                <input type="text" id="resultado" size="40">
+            </div>
+        </div>     
+    </div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <footer class="page-footer orange">
+                    
+        <div class="footer-copyright">
+            <div class="container">
+                Ingrid Juliana Cadavid Villa<br>
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
+                
+                
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/mcd.js"></script>
+
+  </body>
+</html>

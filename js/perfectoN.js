@@ -1,10 +1,11 @@
 var resultado = document.getElementById("resultado");
 var boton = document.getElementById("boton");
 
-const numeroPerfecto = {
+const numerosPerfecto = {
     descripcion: "Encuentra los tres primeros numeros perfectos",
     perfectos: function(){
 
+        var N = parseInt(document.getElementById("numero").value);
         var i=0;
         var j;
         var num=1;
@@ -15,8 +16,9 @@ const numeroPerfecto = {
         var c;
         var div;
         var i=0;
+        var p = " ";
         
-        while (m<500) {
+        while (m<=N) {
             sum = 0;
             c = 0;
             for (k = 1; k < num; k++) {
@@ -56,7 +58,14 @@ const numeroPerfecto = {
             m++;
             num++;
         }
-        resultado.value = numPerfecto[0] + ", " + numPerfecto[1] + ", " + numPerfecto[2];
+
+        j = 0;
+        for (l of numPerfecto) {
+            p = p + numPerfecto[j] + ", ";
+            j++;
+        }
+
+        resultado.value = p;
     }
 
     
@@ -65,4 +74,4 @@ const numeroPerfecto = {
 }
 
 
-boton.addEventListener("click",numeroPerfecto.perfectos);
+boton.addEventListener("click",numerosPerfecto.perfectos);
